@@ -1,0 +1,86 @@
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'aos/dist/aos.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html,
+  body {
+    @apply w-full overflow-x-hidden bg-white font-sans text-dark antialiased;
+  }
+
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  img {
+    @apply h-auto max-w-full;
+  }
+
+  input,
+  button,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  [x-cloak] {
+    display: none !important;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1280px] px-4 sm:px-5 md:px-6 xl:px-10;
+  }
+
+  .nav-link {
+    @apply relative whitespace-nowrap py-2 text-sm font-semibold text-dark transition-all duration-300 hover:-translate-y-0.5 hover:text-primary;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 h-0.5 w-0 rounded-full bg-primary transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .btn-primary {
+    @apply inline-flex min-h-[44px] items-center justify-center rounded-2xl bg-primary px-6 py-3 text-sm font-bold text-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:bg-blue-700 hover:shadow-card active:scale-95;
+  }
+
+  .btn-green {
+    @apply inline-flex min-h-[44px] items-center justify-center rounded-2xl bg-cta px-6 py-3 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:bg-green-600 hover:shadow-card active:scale-95;
+  }
+
+  .btn-yellow {
+    @apply inline-flex min-h-[44px] items-center justify-center rounded-2xl bg-accent px-5 py-3 text-sm font-extrabold text-dark transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:bg-yellow-300 hover:shadow-card active:scale-95;
+  }
+
+  .swiper-pagination-bullet {
+    @apply bg-primary opacity-30;
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply w-7 rounded-full opacity-100;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
