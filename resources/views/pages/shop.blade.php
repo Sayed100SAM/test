@@ -5,7 +5,7 @@
 @section('content')
 @php
     $categories = [
-        ['id' => 'meats-seafood', 'name' => 'Meats & Seafood', 'text' => 'Fresh cuts and ocean picks.', 'image' => 'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=500&q=85'],
+        ['id' => 'meats-seafood', 'name' => 'Meats & Seafood', 'text' => 'Chicken, beef, fish, prawns and fresh cuts.', 'image' => 'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=500&q=85'],
         ['id' => 'bakery', 'name' => 'Bakery', 'text' => 'Breads, cakes and pastries.', 'image' => 'https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=500&q=85'],
         ['id' => 'beverages', 'name' => 'Beverages', 'text' => 'Juices, sparkling drinks and tea.', 'image' => 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=500&q=85'],
         ['id' => 'fresh-produce', 'name' => 'Fresh Produce', 'text' => 'Fruits and vegetables.', 'image' => 'https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=500&q=85'],
@@ -14,6 +14,10 @@
     $products = [
         ['Atlantic Salmon Fillet', 'Meats & Seafood', 'https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&w=500&q=85', '৳1,650'],
         ['Grass Fed Beef Steak', 'Meats & Seafood', 'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=500&q=85', '৳2,050'],
+        ['Fresh Chicken Breast', 'Meats & Seafood', 'https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=500&q=85', '৳720'],
+        ['Tiger Prawns Pack', 'Meats & Seafood', 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=500&q=85', '৳1,250'],
+        ['Tuna Steak Cut', 'Meats & Seafood', 'https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=500&q=85', '৳1,480'],
+        ['Premium Lamb Chops', 'Meats & Seafood', 'https://images.unsplash.com/photo-1602470520998-f4a52199a3d6?auto=format&fit=crop&w=500&q=85', '৳2,350'],
         ['Sourdough Bread Loaf', 'Bakery', 'https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=500&q=85', '৳499'],
         ['Butter Croissant Pack', 'Bakery', 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=500&q=85', '৳690'],
         ['Premium Orange Juice', 'Beverages', 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=500&q=85', '৳610'],
