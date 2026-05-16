@@ -2,7 +2,7 @@
     <div class="hero-swiper swiper overflow-hidden rounded-[28px] bg-gradient-to-br from-blue-50 via-white to-yellow-50">
         <div class="swiper-wrapper">
             @foreach([
-                ['badge' => 'Fresh deals every morning', 'title' => 'A different kind of grocery store', 'text' => 'Premium produce, pantry staples and daily essentials delivered with care in under two hours.', 'price' => '৳1,650', 'image' => 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=85'],
+                ['badge' => 'Fresh deals every morning', 'title' => 'A different kind of grocery store', 'text' => 'Premium produce, pantry staples and daily essentials delivered with care in under two hours.', 'price' => '৳100', 'image' => 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=85'],
                 ['badge' => 'Organic market picks', 'title' => 'Healthy groceries for busy families', 'text' => 'Shop farm-fresh fruits, dairy, snacks and beverages with weekly specials.', 'price' => '৳1,050', 'image' => 'https://images.unsplash.com/photo-1579113800032-c38bd7635818?auto=format&fit=crop&w=900&q=85'],
             ] as $slide)
                 <div class="swiper-slide">
